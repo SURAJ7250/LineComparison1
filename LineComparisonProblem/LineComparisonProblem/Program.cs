@@ -6,7 +6,8 @@ namespace LineComparisonProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Line Compariosn Problem statement");
+            Comparision comparision = new Comparision(1, 2, 3, 4);
+            comparision.CalculateLength();
         }
     }
 }
