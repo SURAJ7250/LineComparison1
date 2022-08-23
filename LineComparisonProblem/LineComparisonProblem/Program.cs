@@ -9,8 +9,8 @@ namespace LineComparisonProblem
             Comparision comparison = new Comparision(1, 2, 3, 4);
             double line1 = Comparision.CalculateLength();
             Console.WriteLine("Length of first line " + line1);
-            Comparision LineComparisonProblem = new Comparision(1, 2, 3, 4);
-            double line2 = LineComparisonProblem.CalculateLength();
+            Comparision LineComparisionProblem = new Comparision(1, 2, 3, 4);
+            double line2 = LineComparisionProblem.CalculateLength();
             Console.WriteLine("Length of second line" + line2);
             if (line1 == line2)
             {
