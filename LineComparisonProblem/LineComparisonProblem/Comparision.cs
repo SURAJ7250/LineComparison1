@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LineComparisonProblem
+namespace LineComparisionProblem
 {
     internal class Comparision
     {
@@ -16,11 +16,11 @@ namespace LineComparisonProblem
             this.y1 = _y1;
             this.y2 = _y2;
         }
-        public void CalculateLength()
+        public double CalcLength()
         {
             double lineLength = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
             return lineLength;
-
         }
+
     }
 }

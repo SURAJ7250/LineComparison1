@@ -1,30 +1,25 @@
 ﻿using System;
 
-namespace LineComparisonProblem
+namespace LineComparisionProblem
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Comparision comparison = new Comparision(1, 2, 3, 4);
-            double line1 = Comparision.CalculateLength();
-            Console.WriteLine("Length of first line " + line1);
-            Comparision LineComparisonProblem = new Comparision(1, 2, 3, 4);
-            double line2 = LineComparisonProblem.CalculateLength();
-            Console.WriteLine("Length of second line" + line2);
-            if (line1 == line2)
+            Comparision comparison = new Comparision(4, 5, 6, 7);
+            double line1 = comparison.CalcLength();
+            Console.WriteLine("Length of 1st Line: " + line1);
+            Comparision linecomparison = new Comparision(8, 9, 10, 12);
+            double line2 = linecomparison.CalcLength();
+            Console.WriteLine("Length of 2nd Line: " + line2);
+            if (line1.Equals(line2))
+                Console.WriteLine("Both Lines are Equal");
             {
-                Console.WriteLine("Line 1 and Line 2 are equal");
+                if (line1.CompareTo(line2) > 0)
+                    Console.WriteLine("1st Line is Greater than 2nd Line");
+                else
+                    Console.WriteLine("2nd Line is Greater than 1st Line");
             }
-            else
-                Console.WriteLine("Not equal");
-            if (line1.CompareTo(line2) == 0)
-                Console.WriteLine("Both lines are same");
-            if (line1.CompareTo(line2) > 0)
-                Console.WriteLine("Line 1 is greater than line 2");
-            else
-                Console.WriteLine("Line 2 is greater than line 1");
-
         }
     }
 }
